@@ -12,8 +12,18 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {'intelephense', 'tsserver', 'marksman'},
+	ensure_installed = {'cssls', 'dockerls', 'docker_compose_language_service', 'html', 'hydra_lsp', 'lua_ls', 'intelephense', 'tsserver', 'marksman'},
 	handlers = {
 		lsp_zero.default_setup,
 	},
 })
+
+local cmp = require('cmp')
+local cmp_select = {behavior = cmp.SelectBehavior.Select}
+local cmp_mappings = lsp_zero.defaults.cmp_mappings({
+	['<C-p'] = cmp.mapping.select_prev_item(cmp_select),
+	['<C-n'] = cmp.mapping.select_next_item(cmp_select),
+	['<C-y'] = cmp.mapping.confirm({ select = true }),
+	['<C-s'] = cmp.mapping.complete(),
+})
+
