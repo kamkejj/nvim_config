@@ -1,5 +1,9 @@
 # NeoVim Config
 
+## Install
+Config
+Clone this to `~/.config` directory.
+
 ## Shortcuts
 <leader> = " " -> Space bar
 C = control
