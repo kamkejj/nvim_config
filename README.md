@@ -2,7 +2,8 @@
 
 ## Install
 Config
-Clone this to `~/.config` directory.
+Clone this to `~/.config` directory as `nvim`.
+`git clone git@github.com:kamkejj/nvim_config.git nvim`
 
 ## Shortcuts
 <leader> = " " -> Space bar
