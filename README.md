@@ -1,8 +1,15 @@
 # NeoVim Config
 
 ## Install
+Install neovim
+
+Install Packer
+https://github.com/wbthomason/packer.nvim?tab=readme-ov-file#requirements
+`git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+
 Config
-Clone this to `~/.config` directory as `nvim`.
+Clone this to `~/.config` directory as `nvim` e.g `~/.config/nvim`.
 `git clone git@github.com:kamkejj/nvim_config.git nvim`
 
 ## Shortcuts
